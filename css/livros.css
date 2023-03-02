@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: #155D85;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+
+    
+}
+
+header img {
+
+    width: 250px;
+    height: 250px;
+}
+
+main {
+    background: linear-gradient(243.27deg, #709DE0 0.65%, #83D1E2 100.92%);
+    display: flex;
+    flex-direction: column;
+    /* padding: 23px; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secao {
+
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    margin-top: 250px;
+
+}
+
+.botao {
+
+    padding-left: 15px;
+    padding-top: 30px;
+
+
+}
+
+.botao input {
+
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #155D85;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+
+.botao input:hover {
+    background-color: #010d17;
+    transform: scale(1.1);
+
+}
+
+.dados {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    flex-wrap: wrap;
+    width: 500px;
+
+
+}
+
+
+
+
+#titulo{
+  
+    font-weight: 500;
+}
+
+#imagem {
+
+    width: 150px;
+    height: 200px;
+
+}
+
+
+footer {
+    display: flex;
+    background-color: #155D85;
+    height: 68px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
+}

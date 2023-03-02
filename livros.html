@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Literária</title>
+    <link rel="stylesheet" href="css/livros.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        
+        <img src="imagens/Reading glasses-bro (1).png" alt="">
+
+        <p>API Literária</p>
+
+    </header>
+
+    <main>
+        <section class="secao">
+
+            <div class="botao">
+                <input type="button" onclick="exibir1()" value="?">
+            </div>
+
+            <div class="botao">
+                <input type="button" onclick="exibir2()" value="?">
+            </div>
+
+            <div class="botao">
+                <input type="button" onclick="exibir3()" value="?">
+            </div>
+
+
+            <div class="botao">
+                <input type="button" value="Atualizar" id="atualiza" onclick="window.location.reload()">
+            </div>
+
+
+            <div class="botao">
+                <input type="button" onclick="exibir4()" value="?">
+            </div>
+
+            <div class="botao">
+                <input type="button" onclick="exibir5()" value="?">
+            </div>
+
+            <div class="botao">
+                <input type="button" onclick="exibir6()" value="?">
+            </div>
+
+            
+
+
+        </section>
+
+
+        <section class="dados">
+            <div id="titulo"></div>
+            <br>
+            <div id="imagem"></div>
+            <br>
+            <div id="autor"></div>
+            <div id="genero"></div>
+            <div id="editora"></div>
+            <div id="sinopse"></div>
+            <br>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy Todos os direitos reservados</p>
+
+    </footer>
+
+    <script src="js/livros.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API-CEP</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topo-api">
+      <nav>
+        <button class="menu-responsivo"></button>
+        <a href="api.html">Home</a>
+        <a href="cep.html">CEP</a>
+        <a href="dolar.html">Dólar</a>
+        <a href="clima.html">Clima</a>
+        <a href="livros.html" target="_blank">Livros</a>
+        <a href="loja.html" >json</a>
+      </nav>
+
+      <img class="img-topo" src="imagens/configuracao.png" alt="" />
+    </header>
+    <main class="conteudo-cep">
+      <section class="formulario">
+        <h1 class="texto">Consulta de CEP</h1>
+
+        <legend>Endereço</legend>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" autocomplete="off" />
+        <br />
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" readonly />
+        <br />
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" />
+        <br />
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" readonly />
+        <br />
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" readonly />
+        <br />
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" readonly />
+      </section>
+
+      <img class="imagem-cep" src="imagens/gps.png" alt="" />
+    </main>
+
+    <footer class="rodapé">&COPY2023 Todos os direitos reservados</footer>
+  </body>
+  <script src="js/cep.js"></script>
+</html>

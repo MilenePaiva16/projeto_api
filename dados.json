@@ -1,0 +1,28 @@
+{
+    "produto1":{
+    "name":"A seleção",
+    "album":"Companhia das Letras",
+    "style":"Ficção",
+    "price":"R$ 39,90",
+    "image":"<img src='imagens/capa-ASelecao.jpg' width='150px'>"
+
+},
+
+"produto2":{
+    "name":"Corte de espinho e rosas",
+    "album":"Bloomsbury Publishing",
+    "style":"Fantasia",
+    "price":"R$ 29,90",
+    "image":"<img src='imagens/capa-acotar.jpg' width='150px'>"
+
+},
+
+"produto3":{
+    "name":"O príncipe cruel",
+    "album":"Record",
+    "style":"Fantasia",
+    "price":"R$ 49,90",
+    "image":"<img src='imagens/capa-OPrincipeCruel.jpg' width='150px'>"
+
+}
+}
