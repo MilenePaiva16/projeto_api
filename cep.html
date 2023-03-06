@@ -10,7 +10,7 @@
   <body>
     <header class="topo-api">
       <nav>
-        <button class="menu-responsivo"></button>
+        <button class="menu-responsivo"><a href="api.html"></a></button>
         <a href="api.html">Home</a>
         <a href="cep.html">CEP</a>
         <a href="dolar.html">Dólar</a>
@@ -43,6 +43,8 @@
         <br />
         <label for="estado">Estado:</label>
         <input type="text" id="estado" readonly />
+
+        <button class="botao-cep" id="botao" onclick="dados()">Resultado</button>
       </section>
 
       <img class="imagem-cep" src="imagens/gps.png" alt="" />

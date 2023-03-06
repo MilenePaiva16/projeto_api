@@ -10,7 +10,7 @@ const cepValido = (cep) => {
     if (cep.length == 8) {
         return true;
     } else {
-        return false;
+        return alert("Este número de CEP não existe!");
     }
 }
 //buscar API

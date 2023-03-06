@@ -19,11 +19,9 @@ header {
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(197, 160, 246, 1) 15%,
-    rgb(171, 145, 194) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(197, 160, 246, 1) 15%,
+      rgb(171, 145, 194) 100%);
 
 }
 
@@ -60,11 +58,13 @@ main {
   padding-top: 250px;
   /* padding-bottom: 100px; */
 }
+
 .img-topo {
   width: 170px;
   height: 170px;
   position: static;
 }
+
 .imagem-dolar {
   width: 450px;
   height: 450px;
@@ -156,6 +156,29 @@ nav a:hover::after {
   transform: scale(1.1);
 }
 
+.botao-cep {
+
+  font-family: "Quicksand", sans-serif;
+  background-color: #3f2c3c;
+  margin-top: 10px;
+  color: #ffffff;
+  height: 40px;
+  width: 90px;
+  font-weight: 500;
+  border-radius: 15px;
+  font-size: 17px;
+  transition: 0.5s ease;
+}
+
+.botao-cep:hover {
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+
 .historia {
   display: flex;
   flex-direction: row;
@@ -186,7 +209,7 @@ nav a:hover::after {
   padding-bottom: 50px;
 }
 
-#texto-api-topo{
+#texto-api-topo {
   font-family: "VT323", monospace;
   color: #3f2c3c;
   font-size: 50px;
@@ -206,13 +229,14 @@ nav a:hover::after {
 .typing-animation {
   animation: blinkCursor 500ms steps(40) infinite normal,
     typing 2s steps(40) 0.5s normal both;
-    
+
 }
 
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 5.3em;
   }
@@ -220,12 +244,13 @@ nav a:hover::after {
 
 @keyframes blinkCursor {
   from {
-    border-right-color:transparent;
- 
-    
+    border-right-color: transparent;
+
+
   }
+
   to {
-    border-right-color:transparent;
+    border-right-color: transparent;
 
   }
 }
@@ -294,8 +319,8 @@ input {
   text-align: center;
   width: 60%;
   height: 500px;
-  box-shadow:  18px 18px 18px #635f87,
-             -18px -18px 36px #81568d;
+  box-shadow: 18px 18px 18px #635f87,
+    -18px -18px 36px #81568d;
 }
 
 .produtos {
@@ -308,7 +333,7 @@ input {
 .card {
   border: 3px solid #000000;
   font-weight: 500;
-  font-family:  "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
   text-align: justify;
   display: flex;
@@ -318,31 +343,42 @@ input {
   border-radius: 10px;
   width: 300px;
   height: 400px;
-  animation: animacao-borda 2s infinite;
- 
+  animation: animacao-borda 4s infinite;
+
 }
 
 
 
 
 @keyframes animacao-borda {
-  0% {
+  5% {
+    border-color: #a37bf4;
+    
+
+  }
+
+  30% {
     border-color: #6543ab;
-    
   }
+
   50% {
-    border-color: rgb(79, 63, 103);
-    
+    border-color: rgb(116, 87, 162);
+
   }
-  100% {
+  70%{
+    border-color: rgb(79, 63, 103);
+  }
+
+  95% {
     border-color: #2a1034;
-    
+
   }
 }
 
-.botao-comprar{
-background-color: #6e68a4;
-border-bottom: #000000;
+
+.botao-comprar {
+  background-color: #6e68a4;
+  border-bottom: #000000;
   width: 120px;
   height: 40px;
   border-radius: 10px;
@@ -352,12 +388,12 @@ border-bottom: #000000;
 
 }
 
-.botao-comprar:hover{
+.botao-comprar:hover {
   color: #ffffff;
   cursor: pointer;
 }
 
-.img-clima{
+.img-clima {
   width: 200px;
   height: 200px;
 }
@@ -376,14 +412,14 @@ footer {
   width: 100%;
 }
 
-.menu-responsivo {
-  display: none;
-}
 
 @media (max-width: 1000px) {
   .imagem-home {
     display: none;
   }
+
+ 
+
 }
 
 @media (max-width: 700px) {
@@ -401,20 +437,17 @@ footer {
     align-items: center;
   }
 
-  nav a {
-    display: none;
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
-  .menu-responsivo {
-    display: block;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background-image: url("../imagens/menu-aberto.png");
-    background-repeat: no-repeat;
-    background-position: start;
-    background-color: #bcb6f6;
-  }
+ 
+
 
   header {
     height: 130px;
@@ -430,10 +463,58 @@ footer {
     width: 350px;
     height: 350px;
   }
+
+  .produtos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagem-cep {
+    width: 200px;
+    height: 200px;
+
+  }
+
+
+  .clima{
+    width: 100%;
+  }
+
+ 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 930px) {
   .img-topo {
     display: none;
   }
+
+  header{
+    height: 150px;
+  }
+
+  .clima{
+    width: 100%;
+    font-size: 20px;
+
+  }
+
+  .clima #cidade{
+  width: 50%;
+
+  }
+
+  .conteudo-cep{
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .formulario{
+    width: 100%;
+    align-items: center;
+  
+    
+  }
+
+
 }
